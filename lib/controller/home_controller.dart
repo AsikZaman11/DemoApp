@@ -4,10 +4,11 @@ import 'package:get/get.dart';
 import '../model/student_model.dart';
 
 class HomeController extends GetxController{
-RxString cityName = 'Dhaka'.obs;
 
-void changeCityName(final name){
- cityName.value = name;
+List<StudentModel> studentList =[];
+void addStudentData(StudentModel data){
+  studentList.add(data);
+  update();
 }
 }
 

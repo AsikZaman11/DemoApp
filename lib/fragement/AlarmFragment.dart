@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-
+import '../routes/routes.dart';
 import 'SearchFragment.dart';
 
 class AlarmFragment extends StatelessWidget {
@@ -30,7 +30,7 @@ class AlarmFragment extends StatelessWidget {
                 ),
                 CircularProgressIndicator(),
                 ElevatedButton(onPressed: (){
-                  Get.off(SearchFragment());
+                  Get.offAllNamed(thirdPage);
                 }, child: Text('Back')),
               ],
             ),
